@@ -1,20 +1,31 @@
 # ⚡ GridPulse — Smart Energy Grid Monitoring & Predictive Failure Analytics
 
 <p align="center">
-  <img src="./screenshots/dashboard.png" alt="GridPulse Dashboard" width="100%">
+
+  <img src="./screeenshots/3D%20Analytics.png" alt="GridPulse Dashboard" width="100%">
+
 </p>
 
 <h3 align="center">
-  AI-Powered Smart Energy Grid Monitoring, Anomaly Detection & Predictive Failure Analytics
+
+  AI-Powered Smart Energy Grid Monitoring, Anomaly Detection & Predictive Failure Analytics
+
 </h3>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Python-3.x-blue?style=for-the-badge&logo=python" alt="Python">
-  <img src="https://img.shields.io/badge/PySpark-Big%20Data-orange?style=for-the-badge&logo=apachespark" alt="PySpark">
-  <img src="https://img.shields.io/badge/FastAPI-Backend-green?style=for-the-badge&logo=fastapi" alt="FastAPI">
-  <img src="https://img.shields.io/badge/Next.js-Frontend-black?style=for-the-badge&logo=next.js" alt="Next.js">
-  <img src="https://img.shields.io/badge/React-UI-61DAFB?style=for-the-badge&logo=react" alt="React">
-  <img src="https://img.shields.io/badge/Plotly-Analytics-purple?style=for-the-badge&logo=plotly" alt="Plotly">
+
+  <img src="https://img.shields.io/badge/Python-3.x-blue?style=for-the-badge&logo=python" alt="Python">
+
+  <img src="https://img.shields.io/badge/PySpark-Big%20Data-orange?style=for-the-badge&logo=apachespark" alt="PySpark">
+
+  <img src="https://img.shields.io/badge/FastAPI-Backend-green?style=for-the-badge&logo=fastapi" alt="FastAPI">
+
+  <img src="https://img.shields.io/badge/Next.js-Frontend-black?style=for-the-badge&logo=next.js" alt="Next.js">
+
+  <img src="https://img.shields.io/badge/React-UI-61DAFB?style=for-the-badge&logo=react" alt="React">
+
+  <img src="https://img.shields.io/badge/Plotly-Analytics-purple?style=for-the-badge&logo=plotly" alt="Plotly">
+
 </p>
 
 ---
@@ -26,14 +37,23 @@
 The platform combines:
 
 - Big Data Processing
+
 - Apache PySpark
+
 - Real-Time Telemetry
+
 - Anomaly Detection
+
 - Risk Scoring
+
 - Predictive Failure Analytics
+
 - Interactive Data Visualization
+
 - 3D Analytical Visualization
+
 - REST APIs
+
 - WebSocket-Based Live Monitoring
 
 GridPulse processes **150,000+ smart-grid telemetry records** and converts raw energy data into meaningful operational insights.
@@ -41,14 +61,23 @@ GridPulse processes **150,000+ smart-grid telemetry records** and converts raw e
 The system helps identify:
 
 - Transformer Overload
+
 - Voltage Fluctuation
+
 - Temperature Spikes
+
 - Frequency Deviation
+
 - Power Factor Anomalies
+
 - Communication Failures
+
 - Generation Drops
+
 - Unexpected Consumption
+
 - Transformer Faults
+
 - Compound Anomalies
 
 ---
@@ -58,14 +87,23 @@ The system helps identify:
 The main objectives of GridPulse are:
 
 1. Monitor electrical grid telemetry in real time.
+
 2. Process large-scale energy data using PySpark.
+
 3. Detect abnormal grid behavior.
+
 4. Calculate transformer and grid risk scores.
+
 5. Identify high-risk transformers.
+
 6. Compare energy generation and consumption.
+
 7. Monitor grid health across different regions.
+
 8. Provide an interactive monitoring dashboard.
+
 9. Visualize relationships using 3D analytics.
+
 10. Support predictive maintenance and future failure prediction.
 
 ---
@@ -73,55 +111,105 @@ The main objectives of GridPulse are:
 # 🏗️ System Architecture
 
 ```text
-                    ┌─────────────────────────┐
-                    │     Telemetry Data      │
-                    │      150K+ Records      │
-                    └────────────┬────────────┘
-                                 │
-                                 ▼
-                    ┌─────────────────────────┐
-                    │        PySpark          │
-                    │    Big Data Engine      │
-                    └────────────┬────────────┘
-                                 │
-                                 ▼
-                    ┌─────────────────────────┐
-                    │        BRONZE           │
-                    │       Raw Data           │
-                    └────────────┬────────────┘
-                                 │
-                                 ▼
-                    ┌─────────────────────────┐
-                    │        SILVER           │
-                    │ Cleaned & Validated Data│
-                    └────────────┬────────────┘
-                                 │
-                                 ▼
-                    ┌─────────────────────────┐
-                    │   Anomaly Detection    │
-                    │     & Risk Scoring      │
-                    └────────────┬────────────┘
-                                 │
-                                 ▼
-                    ┌─────────────────────────┐
-                    │          GOLD           │
-                    │    Analytics Data       │
-                    └────────────┬────────────┘
-                                 │
-                ┌────────────────┴────────────────┐
-                │                                 │
-                ▼                                 ▼
-      ┌───────────────────┐             ┌───────────────────┐
-      │      FastAPI      │             │     WebSocket     │
-      │     REST APIs     │             │   Live Telemetry  │
-      └─────────┬─────────┘             └─────────┬─────────┘
-                │                                 │
-                └────────────────┬────────────────┘
-                                 ▼
-                    ┌─────────────────────────┐
-                    │       Next.js           │
-                    │     React Dashboard     │
-                    └─────────────────────────┘
+
+                    ┌─────────────────────────┐
+
+                    │     Telemetry Data      │
+
+                    │      150K+ Records      │
+
+                    └────────────┬────────────┘
+
+                                 │
+
+                                 ▼
+
+                    ┌─────────────────────────┐
+
+                    │        PySpark          │
+
+                    │    Big Data Engine      │
+
+                    └────────────┬────────────┘
+
+                                 │
+
+                                 ▼
+
+                    ┌─────────────────────────┐
+
+                    │        BRONZE           │
+
+                    │       Raw Data           │
+
+                    └────────────┬────────────┘
+
+                                 │
+
+                                 ▼
+
+                    ┌─────────────────────────┐
+
+                    │        SILVER           │
+
+                    │ Cleaned & Validated Data│
+
+                    └────────────┬────────────┘
+
+                                 │
+
+                                 ▼
+
+                    ┌─────────────────────────┐
+
+                    │   Anomaly Detection    │
+
+                    │     & Risk Scoring      │
+
+                    └────────────┬────────────┘
+
+                                 │
+
+                                 ▼
+
+                    ┌─────────────────────────┐
+
+                    │          GOLD           │
+
+                    │    Analytics Data       │
+
+                    └────────────┬────────────┘
+
+                                 │
+
+                ┌────────────────┴────────────────┐
+
+                │                                 │
+
+                ▼                                 ▼
+
+      ┌───────────────────┐             ┌───────────────────┐
+
+      │      FastAPI      │             │     WebSocket     │
+
+      │     REST APIs     │             │   Live Telemetry  │
+
+      └─────────┬─────────┘             └─────────┬─────────┘
+
+                │                                 │
+
+                └────────────────┬────────────────┘
+
+                                 ▼
+
+                    ┌─────────────────────────┐
+
+                    │       Next.js           │
+
+                    │     React Dashboard     │
+
+                    └─────────────────────────┘
+
 ```
 
 ---
@@ -131,41 +219,61 @@ The main objectives of GridPulse are:
 ## Frontend
 
 - Next.js
+
 - React
+
 - TypeScript / JavaScript
+
 - CSS
+
 - Plotly.js
+
 - Interactive Charts
+
 - Interactive 3D Analytics
+
 - Responsive UI
+
 - Light / Dark Mode
 
 ## Backend
 
 - Python
+
 - FastAPI
+
 - REST APIs
+
 - WebSockets
 
 ## Big Data
 
 - Apache Spark
+
 - PySpark
+
 - Spark DataFrames
+
 - Spark SQL
+
 - Structured Streaming
 
 ## Data Processing
 
 - Pandas
+
 - NumPy
+
 - PySpark
 
 ## Visualization
 
 - Plotly
+
 - Interactive 2D Charts
+
 - Interactive 3D Charts
+
 - Geographic Grid Visualization
 
 ---
@@ -179,28 +287,51 @@ Each record represents telemetry collected from a transformer or substation in t
 ## Dataset Fields
 
 | Field | Description |
+
 |---|---|
+
 | `id` | Unique record identifier |
+
 | `event_id` | Unique telemetry event |
+
 | `timestamp` | Telemetry timestamp |
+
 | `region` | Grid region |
+
 | `substation_id` | Substation identifier |
+
 | `transformer_id` | Transformer identifier |
+
 | `voltage_kv` | Voltage level |
+
 | `current_amp` | Current |
+
 | `power_mw` | Electrical power |
+
 | `frequency_hz` | Grid frequency |
+
 | `load_percent` | Transformer load percentage |
+
 | `power_factor` | Power factor |
+
 | `temperature_c` | Transformer temperature |
+
 | `energy_generated_mwh` | Energy generated |
+
 | `energy_consumed_mwh` | Energy consumed |
+
 | `outage_duration_min` | Outage duration |
+
 | `communication_latency_ms` | Communication latency |
+
 | `fault_indicator` | Fault indicator |
+
 | `anomaly_score` | Calculated anomaly score |
+
 | `risk_score` | Calculated risk score |
+
 | `status` | Risk classification |
+
 | `anomaly_type` | Detected anomaly category |
 
 ---
@@ -212,9 +343,13 @@ GridPulse supports geographical analysis of different grid regions.
 The dashboard supports filtering by:
 
 - All Regions
+
 - North
+
 - South
+
 - East
+
 - West
 
 Regional filtering affects the analytics displayed throughout the dashboard.
@@ -228,27 +363,45 @@ GridPulse identifies different types of abnormal grid behavior.
 ## Supported Anomaly Types
 
 - Voltage Fluctuation
+
 - Overload
+
 - Temperature Spike
+
 - Frequency Deviation
+
 - Power Factor Anomaly
+
 - Transformer Fault
+
 - Communication Failure
+
 - Unexpected Consumption
+
 - Generation Drop
+
 - Compound Anomaly
 
 Anomalies are identified using electrical and operational parameters including:
 
 - Voltage
+
 - Current
+
 - Load
+
 - Temperature
+
 - Frequency
+
 - Power Factor
+
 - Energy Generation
+
 - Energy Consumption
+
 - Communication Latency
+
 - Fault Indicators
 
 ---
@@ -258,11 +411,17 @@ Anomalies are identified using electrical and operational parameters including:
 Each telemetry record receives a risk score.
 
 | Risk Score | Status |
+
 |---:|---|
+
 | 0 – 29 | 🟢 Normal |
+
 | 30 – 49 | 🔵 Low |
+
 | 50 – 69 | 🟡 Warning |
+
 | 70 – 84 | 🟠 High Risk |
+
 | 85 – 100 | 🔴 Critical |
 
 The risk classification allows grid operators to quickly identify equipment requiring attention.
@@ -276,14 +435,23 @@ The GridPulse dashboard provides a centralized view of grid health and operation
 The main dashboard contains:
 
 - Total Telemetry
+
 - Grid Health Distribution
+
 - Energy by Region
+
 - Top Anomaly Types
+
 - Top Risk Transformers
+
 - Power Generation vs Consumption
+
 - Live Grid Map
+
 - 3D Grid Analytics
+
 - Recent Alerts
+
 - Live Telemetry Feed
 
 ---
@@ -293,7 +461,9 @@ The main dashboard contains:
 ## 🏠 Main Dashboard
 
 <p align="center">
-  <img src="./screenshots/dashboard.png" alt="GridPulse Main Dashboard" width="100%">
+
+  <img src="./screeenshots/dashboard.png" alt="GridPulse Main Dashboard" width="100%">
+
 </p>
 
 ---
@@ -301,7 +471,9 @@ The main dashboard contains:
 ## ☀️ Overview — Bright Mode
 
 <p align="center">
-  <img src="./screenshots/Overview%20Bright%20Mode.png" alt="GridPulse Overview Bright Mode" width="100%">
+
+  <img src="./screeenshots/dashboard.png" alt="GridPulse Overview Bright Mode" width="100%">
+
 </p>
 
 ---
@@ -317,15 +489,23 @@ Grid Monitoring provides an operational and geographical view of the electrical 
 The Live Grid Map displays:
 
 - Substations
+
 - Transformer locations
+
 - Grid connections
+
 - Regional information
+
 - Transformer status
+
 - Risk information
+
 - Live grid activity
 
 <p align="center">
-  <img src="./screenshots/Grid%20Monitoring-Live%20Map.png" alt="Grid Monitoring Live Map" width="100%">
+
+  <img src="./screeenshots/Grid%20Monitoring-Live%20Map.png" alt="Grid Monitoring Live Map" width="100%">
+
 </p>
 
 ---
@@ -337,25 +517,43 @@ The Equipment Status section provides detailed transformer information.
 It can display:
 
 - Transformer ID
+
 - Substation
+
 - Region
+
 - Load
+
 - Temperature
+
 - Voltage
+
 - Current
+
 - Power
+
 - Power Factor
+
 - Frequency
+
 - Energy Generated
+
 - Energy Consumed
+
 - Communication Latency
+
 - Fault Indicator
+
 - Anomaly Type
+
 - Risk Score
+
 - Status
 
 <p align="center">
-  <img src="./screenshots/Grid%20Monitoring-Equipment%20Status.png" alt="Grid Monitoring Equipment Status" width="100%">
+
+  <img src="./screeenshots/Grid%20Monitoring-Equipment%20Status.png" alt="Grid Monitoring Equipment Status" width="100%">
+
 </p>
 
 ---
@@ -367,13 +565,19 @@ Power Flow compares energy generation and consumption.
 It helps analyze:
 
 - Energy production
+
 - Energy consumption
+
 - Demand patterns
+
 - Generation-consumption differences
+
 - Regional energy behavior
 
 <p align="center">
-  <img src="./screenshots/Grid%20Monitoring-Power%20Flow.png" alt="Grid Monitoring Power Flow" width="100%">
+
+  <img src="./screeenshots/Grid%20Monitoring-Power%20Flow.png" alt="Grid Monitoring Power Flow" width="100%">
+
 </p>
 
 ---
@@ -385,8 +589,11 @@ The Grid Health Distribution visualization categorizes telemetry records accordi
 Categories include:
 
 - Normal
+
 - Warning
+
 - High Risk
+
 - Critical
 
 The visualization responds to the selected global filters.
@@ -400,9 +607,13 @@ Energy generation and consumption can be analyzed across different grid regions.
 Regional analytics help identify:
 
 - High-demand regions
+
 - Low-generation regions
+
 - Consumption patterns
+
 - Generation patterns
+
 - Regional energy imbalance
 
 ---
@@ -414,12 +625,19 @@ GridPulse aggregates detected anomalies to identify the most common grid problem
 Examples include:
 
 - Voltage Fluctuation
+
 - Overload
+
 - Temperature Spike
+
 - Frequency Deviation
+
 - Power Factor Anomaly
+
 - Generation Drop
+
 - Transformer Fault
+
 - Communication Failure
 
 This helps grid operators prioritize recurring operational issues.
@@ -433,15 +651,25 @@ GridPulse ranks transformers based on their calculated risk score.
 Operators can investigate:
 
 - Transformer ID
+
 - Substation
+
 - Region
+
 - Load
+
 - Temperature
+
 - Voltage
+
 - Current
+
 - Power
+
 - Risk Score
+
 - Status
+
 - Anomaly Type
 
 ---
@@ -453,11 +681,17 @@ GridPulse provides time-based comparison of energy generation and consumption.
 The graph can be filtered by:
 
 - Region
+
 - Substation
+
 - Transformer
+
 - Risk Level
+
 - Status
+
 - Anomaly Type
+
 - Time Range
 
 This allows operators to analyze energy behavior for specific parts of the grid.
@@ -473,22 +707,33 @@ The 3D analytics focus on actual data relationships rather than a physical digit
 Possible analytical dimensions include:
 
 ```text
+
 X → Load / Time
+
 Y → Temperature / Voltage
+
 Z → Risk Score / Power
+
 ```
 
 The visualization can be used to identify relationships between:
 
 - Load
+
 - Temperature
+
 - Voltage
+
 - Power
+
 - Risk
+
 - Transformer behavior
 
 <p align="center">
-  <img src="./screenshots/3D%20Analytics.png" alt="GridPulse 3D Analytics" width="100%">
+
+  <img src="./screeenshots/3D%20Analytics.png" alt="GridPulse 3D Analytics" width="100%">
+
 </p>
 
 ---
@@ -500,16 +745,25 @@ The Anomalies page provides detailed information about detected abnormal events.
 It can be used to investigate:
 
 - Anomaly Type
+
 - Transformer
+
 - Substation
+
 - Region
+
 - Risk Score
+
 - Timestamp
+
 - Status
+
 - Fault Information
 
 <p align="center">
-  <img src="./screenshots/Anomalies.png" alt="GridPulse Anomalies Dashboard" width="100%">
+
+  <img src="./screeenshots/Anomalies.png" alt="GridPulse Anomalies Dashboard" width="100%">
+
 </p>
 
 ---
@@ -521,14 +775,21 @@ The Forecasting section provides analytical support for future grid behavior.
 Potential forecasting applications include:
 
 - Energy Demand
+
 - Energy Consumption
+
 - Power Generation
+
 - Transformer Load
+
 - Grid Risk
+
 - Future Anomalies
 
 <p align="center">
-  <img src="./screenshots/Forecasting.png" alt="GridPulse Forecasting" width="100%">
+
+  <img src="./screeenshots/Forecasting.png" alt="GridPulse Forecasting" width="100%">
+
 </p>
 
 ---
@@ -540,44 +801,79 @@ GridPulse uses a centralized filtering architecture.
 Available filters include:
 
 ```text
+
 Region
+
 Substation
+
 Transformer
+
 Risk Level
+
 Status
+
 Anomaly Type
+
 Time Range
+
 ```
 
 The same filtering system is used throughout the dashboard.
 
 ```text
-                 Global Filters
-                       │
-                       ▼
-                  Filter State
-                       │
-                       ▼
-                    FastAPI
-                       │
-                       ▼
-                  Gold Dataset
-                       │
-                ┌──────┴──────┐
-                │             │
-                ▼             ▼
-            Filtering     Aggregation
-                │             │
-                └──────┬──────┘
-                       ▼
-                 JSON Response
-                       │
-                       ▼
-                React Dashboard
-                       │
-          ┌────────────┼────────────┐
-          ▼            ▼            ▼
-         KPI         Charts       Tables
+
+                 Global Filters
+
+                       │
+
+                       ▼
+
+                  Filter State
+
+                       │
+
+                       ▼
+
+                    FastAPI
+
+                       │
+
+                       ▼
+
+                  Gold Dataset
+
+                       │
+
+                ┌──────┴──────┐
+
+                │             │
+
+                ▼             ▼
+
+            Filtering     Aggregation
+
+                │             │
+
+                └──────┬──────┘
+
+                       ▼
+
+                 JSON Response
+
+                       │
+
+                       ▼
+
+                React Dashboard
+
+                       │
+
+          ┌────────────┼────────────┐
+
+          ▼            ▼            ▼
+
+         KPI         Charts       Tables
+
 ```
 
 This ensures that dashboard components use consistent filtered data.
@@ -589,28 +885,47 @@ This ensures that dashboard components use consistent filtered data.
 GridPulse supports real-time telemetry monitoring using WebSocket communication.
 
 ```text
+
 Telemetry Generator
-        │
-        ▼
+
+        │
+
+        ▼
+
 FastAPI / WebSocket
-        │
-        ▼
+
+        │
+
+        ▼
+
 Live Telemetry Stream
-        │
-        ▼
+
+        │
+
+        ▼
+
 Next.js Dashboard
-        │
-        ▼
+
+        │
+
+        ▼
+
 Real-Time Monitoring
+
 ```
 
 The live monitoring system can update:
 
 - Grid status
+
 - Transformer information
+
 - Alerts
+
 - Telemetry
+
 - Risk information
+
 - Operational metrics
 
 ---
@@ -624,9 +939,13 @@ GridPulse follows a layered Big Data architecture.
 The Bronze layer contains raw telemetry data.
 
 ```text
+
 Raw Telemetry
-      ↓
-   Bronze
+
+      ↓
+
+   Bronze
+
 ```
 
 It preserves incoming data before analytical processing.
@@ -640,20 +959,33 @@ The Silver layer performs data preparation.
 Operations include:
 
 - Data cleaning
+
 - Missing-value handling
+
 - Duplicate handling
+
 - Type conversion
+
 - Data validation
+
 - Data standardization
 
 ```text
+
 Bronze
-   ↓
+
+   ↓
+
 Cleaning
-   ↓
+
+   ↓
+
 Validation
-   ↓
+
+   ↓
+
 Silver
+
 ```
 
 ---
@@ -665,22 +997,37 @@ The Gold layer contains analytics-ready data.
 Processing includes:
 
 - Anomaly Detection
+
 - Risk Scoring
+
 - Aggregations
+
 - Transformer Analytics
+
 - Regional Analytics
+
 - Energy Analytics
 
 ```text
+
 Silver
-   ↓
+
+   ↓
+
 Anomaly Detection
-   ↓
+
+   ↓
+
 Risk Scoring
-   ↓
+
+   ↓
+
 Aggregation
-   ↓
+
+   ↓
+
 Gold
+
 ```
 
 ---
@@ -702,7 +1049,9 @@ PySpark is used for scalable data processing.
 The system follows:
 
 ```text
+
 Raw → Bronze → Silver → Gold
+
 ```
 
 ## 4. Data Cleaning
@@ -714,7 +1063,9 @@ Data is cleaned and validated during the Silver stage.
 Electrical and operational features are used to calculate:
 
 - Anomaly Score
+
 - Risk Score
+
 - Transformer Health
 
 ## 6. Aggregation
@@ -722,10 +1073,15 @@ Electrical and operational features are used to calculate:
 Data is aggregated by:
 
 - Region
+
 - Substation
+
 - Transformer
+
 - Time
+
 - Anomaly Type
+
 - Risk Category
 
 ## 7. Streaming
@@ -741,56 +1097,107 @@ Processed Big Data is transformed into interactive visual analytics.
 # 📁 Project Structure
 
 ```text
+
 GridPulse/
+
 │
+
 ├── data/
-│   ├── raw/
-│   ├── bronze/
-│   ├── silver/
-│   ├── gold/
-│   ├── streaming/
-│   └── exports/
+
+│   ├── raw/
+
+│   ├── bronze/
+
+│   ├── silver/
+
+│   ├── gold/
+
+│   ├── streaming/
+
+│   └── exports/
+
 │
+
 ├── data_generation/
-│   ├── generate_data.py
-│   └── ...
+
+│   ├── generate_data.py
+
+│   └── ...
+
 │
+
 ├── pipeline/
-│   ├── bronze/
-│   ├── silver/
-│   ├── gold/
-│   └── ...
+
+│   ├── bronze/
+
+│   ├── silver/
+
+│   ├── gold/
+
+│   └── ...
+
 │
+
 ├── analytics/
-│   ├── anomaly_detection/
-│   ├── risk_scoring/
-│   ├── forecasting/
-│   └── ...
+
+│   ├── anomaly_detection/
+
+│   ├── risk_scoring/
+
+│   ├── forecasting/
+
+│   └── ...
+
 │
+
 ├── backend/
-│   ├── main.py
-│   ├── api/
-│   ├── services/
-│   └── ...
+
+│   ├── main.py
+
+│   ├── api/
+
+│   ├── services/
+
+│   └── ...
+
 │
+
 ├── dashboard/
-│   ├── app/
-│   ├── components/
-│   ├── lib/
-│   └── ...
+
+│   ├── app/
+
+│   ├── components/
+
+│   ├── lib/
+
+│   └── ...
+
 │
+
 ├── screenshots/
-│   ├── 3D Analytics.png
-│   ├── Anomalies.png
-│   ├── dashboard.png
-│   ├── Forecasting.png
-│   ├── Grid Monitoring-Equipment Status.png
-│   ├── Grid Monitoring-Live Map.png
-│   ├── Grid Monitoring-Power Flow.png
-│   └── Overview Bright Mode.png
+
+│   ├── 3D Analytics.png
+
+│   ├── Anomalies.png
+
+│   ├── dashboard.png
+
+│   ├── Forecasting.png
+
+│   ├── Grid Monitoring-Equipment Status.png
+
+│   ├── Grid Monitoring-Live Map.png
+
+│   ├── Grid Monitoring-Power Flow.png
+
+│   └── Overview Bright Mode.png
+
 │
+
 ├── README.md
+
 └── requirements.txt
+
 ```
 
 ---
@@ -800,8 +1207,11 @@ GridPulse/
 ## 1. Clone the Repository
 
 ```bash
+
 git clone https://github.com/mash157/GridPulse.git
+
 cd GridPulse
+
 ```
 
 ---
@@ -811,25 +1221,33 @@ cd GridPulse
 Create a virtual environment:
 
 ```bash
+
 python -m venv venv
+
 ```
 
 ### Windows
 
 ```bash
+
 venv\Scripts\activate
+
 ```
 
 ### Linux / macOS
 
 ```bash
+
 source venv/bin/activate
+
 ```
 
 Install dependencies:
 
 ```bash
+
 pip install -r requirements.txt
+
 ```
 
 ---
@@ -839,19 +1257,25 @@ pip install -r requirements.txt
 Run:
 
 ```bash
+
 uvicorn backend.main:app --reload
+
 ```
 
 Example health endpoint:
 
 ```text
+
 GET /health
+
 ```
 
 Example WebSocket endpoint:
 
 ```text
+
 /ws/grid
+
 ```
 
 ---
@@ -861,25 +1285,33 @@ Example WebSocket endpoint:
 Move into the dashboard directory:
 
 ```bash
+
 cd dashboard
+
 ```
 
 Install dependencies:
 
 ```bash
+
 npm install
+
 ```
 
 Start the Next.js development server:
 
 ```bash
+
 npm run dev
+
 ```
 
 The frontend is normally available at:
 
 ```text
+
 http://localhost:3000
+
 ```
 
 ---
@@ -887,16 +1319,27 @@ http://localhost:3000
 # 🔌 API Endpoints
 
 | Endpoint | Purpose |
+
 |---|---|
+
 | `/health` | Backend health check |
+
 | `/api/dashboard` | Dashboard KPIs |
+
 | `/api/health-distribution` | Grid health distribution |
+
 | `/api/energy-by-region` | Regional energy analytics |
+
 | `/api/anomalies` | Anomaly information |
+
 | `/api/risk-transformers` | High-risk transformers |
+
 | `/api/map` | Grid map data |
+
 | `/api/3d-analytics` | 3D analytics |
+
 | `/api/reports` | Filter-aware reports |
+
 | `/ws/grid` | Live telemetry WebSocket |
 
 ---
@@ -906,25 +1349,39 @@ http://localhost:3000
 GridPulse separates backend health from WebSocket connectivity.
 
 ```text
+
 Backend Health
-      │
-      ├── Online
-      │
-      └── Offline
+
+      │
+
+      ├── Online
+
+      │
+
+      └── Offline
+
 
 
 WebSocket
-      │
-      ├── Connecting
-      ├── Live
-      └── Offline
+
+      │
+
+      ├── Connecting
+
+      ├── Live
+
+      └── Offline
+
 ```
 
 This allows the interface to distinguish between:
 
 - Backend unavailable
+
 - WebSocket connecting
+
 - Live telemetry
+
 - Connection failure
 
 ---
@@ -932,24 +1389,43 @@ This allows the interface to distinguish between:
 # 🎛️ Dashboard Navigation
 
 ```text
+
 GridPulse
+
 │
+
 ├── Overview
+
 │
+
 ├── Grid Monitoring
-│   ├── Equipment Status
-│   ├── Live Map
-│   └── Power Flow
+
+│   ├── Equipment Status
+
+│   ├── Live Map
+
+│   └── Power Flow
+
 │
+
 ├── Transformers
+
 │
+
 ├── 3D Analytics
+
 │
+
 ├── Anomalies
+
 │
+
 ├── Forecasting
+
 │
+
 └── Reports
+
 ```
 
 ---
@@ -961,14 +1437,23 @@ The Reports section provides filter-aware analytical summaries.
 Reports can include:
 
 - Total Telemetry
+
 - Number of Regions
+
 - Number of Substations
+
 - Number of Transformers
+
 - Normal Records
+
 - Warning Records
+
 - High-Risk Records
+
 - Critical Records
+
 - Anomaly Statistics
+
 - Energy Statistics
 
 Report values are calculated according to the selected data and filters.
@@ -982,17 +1467,29 @@ GridPulse follows a centralized data-processing architecture.
 Dashboard analytics are intended to be calculated from processed data rather than relying on static dashboard values.
 
 ```text
+
 Actual Dataset
-      ↓
+
+      ↓
+
 PySpark Processing
-      ↓
+
+      ↓
+
 Gold Data
-      ↓
+
+      ↓
+
 FastAPI
-      ↓
+
+      ↓
+
 Next.js / React
-      ↓
+
+      ↓
+
 Charts / Tables / KPIs
+
 ```
 
 This keeps dashboard analytics consistent with the underlying dataset.
@@ -1002,23 +1499,41 @@ This keeps dashboard analytics consistent with the underlying dataset.
 # 🌟 Key Features
 
 - ⚡ Smart Energy Grid Monitoring
+
 - 📊 150K+ Telemetry Records
+
 - 🚨 Anomaly Detection
+
 - 🔥 Transformer Risk Scoring
+
 - 🗺️ Interactive Grid Map
+
 - 📈 Energy Generation vs Consumption
+
 - 🌍 Regional Analytics
+
 - 🧊 Interactive 3D Analytics
+
 - 🔄 Real-Time Telemetry
+
 - 🧠 Big Data Processing
+
 - 🏭 Bronze-Silver-Gold Pipeline
+
 - 🔎 Global Filtering
+
 - 📑 Analytical Reports
+
 - 🔮 Forecasting
+
 - ☀️ Light Mode
+
 - 🌙 Dark Mode
+
 - 📡 WebSocket Streaming
+
 - 🚀 FastAPI Backend
+
 - ⚛️ Next.js / React Frontend
 
 ---
@@ -1028,12 +1543,19 @@ This keeps dashboard analytics consistent with the underlying dataset.
 GridPulse demonstrates practical implementation of concepts from:
 
 - Big Data Analytics
+
 - Artificial Intelligence
+
 - Machine Learning
+
 - Data Engineering
+
 - Distributed Computing
+
 - Real-Time Data Processing
+
 - Data Visualization
+
 - Predictive Analytics
 
 The project combines these concepts into a Smart Energy Grid Analytics platform.
@@ -1047,9 +1569,13 @@ The project combines these concepts into a Smart Energy Grid Analytics platform.
 Future versions can integrate:
 
 - Random Forest
+
 - XGBoost
+
 - LightGBM
+
 - LSTM
+
 - Transformer-based forecasting
 
 for improved failure prediction.
@@ -1063,9 +1589,13 @@ Real electrical sensors can replace the synthetic telemetry generator.
 The platform can be deployed using:
 
 - AWS
+
 - Microsoft Azure
+
 - Google Cloud
+
 - Docker
+
 - Kubernetes
 
 ## 🧠 Predictive Maintenance
@@ -1073,8 +1603,11 @@ The platform can be deployed using:
 Future versions can predict:
 
 - Transformer failures
+
 - Equipment degradation
+
 - Maintenance requirements
+
 - Component lifetime
 
 ## 📱 Mobile Monitoring
@@ -1082,8 +1615,11 @@ Future versions can predict:
 A mobile application could provide:
 
 - Critical alerts
+
 - Transformer health
+
 - Emergency notifications
+
 - Live grid monitoring
 
 ## 🔐 Security
@@ -1091,9 +1627,13 @@ A mobile application could provide:
 Future versions can include:
 
 - User authentication
+
 - Role-Based Access Control
+
 - API Security
+
 - Audit Logs
+
 - Secure Telemetry Transmission
 
 ---
@@ -1107,7 +1647,9 @@ Future versions can include:
 **Domain:**
 
 ```text
+
 Big Data + Artificial Intelligence + Smart Grid Analytics
+
 ```
 
 ---
@@ -1116,35 +1658,35 @@ Big Data + Artificial Intelligence + Smart Grid Analytics
 
 ## Dashboard
 
-![GridPulse Dashboard](./screenshots/dashboard.png)
+
 
 ## Overview — Bright Mode
 
-![Overview Bright Mode](./screenshots/Overview%20Bright%20Mode.png)
+
 
 ## Grid Monitoring — Live Map
 
-![Grid Monitoring Live Map](./screenshots/Grid%20Monitoring-Live%20Map.png)
+
 
 ## Grid Monitoring — Equipment Status
 
-![Grid Monitoring Equipment Status](./screenshots/Grid%20Monitoring-Equipment%20Status.png)
+
 
 ## Grid Monitoring — Power Flow
 
-![Grid Monitoring Power Flow](./screenshots/Grid%20Monitoring-Power%20Flow.png)
+
 
 ## 3D Analytics
 
-![3D Analytics](./screenshots/3D%20Analytics.png)
+
 
 ## Anomalies
 
-![Anomalies](./screenshots/Anomalies.png)
+
 
 ## Forecasting
 
-![Forecasting](./screenshots/Forecasting.png)
+
 
 ---
 
@@ -1153,25 +1695,33 @@ Big Data + Artificial Intelligence + Smart Grid Analytics
 After adding the README and screenshots:
 
 ```bash
+
 git add README.md screenshots/
+
 ```
 
 Commit the changes:
 
 ```bash
+
 git commit -m "Add GridPulse README and screenshots"
+
 ```
 
 Push to GitHub:
 
 ```bash
+
 git push origin main
+
 ```
 
 If your default branch is `master`:
 
 ```bash
+
 git push origin master
+
 ```
 
 ---
@@ -1181,31 +1731,57 @@ git push origin master
 GridPulse transforms large-scale smart-grid telemetry into actionable intelligence.
 
 ```text
-       150K+ Telemetry Records
-                  │
-                  ▼
-               PySpark
-                  │
-                  ▼
-          Bronze → Silver → Gold
-                  │
-                  ▼
-         Anomaly Detection
-                  │
-                  ▼
-            Risk Scoring
-                  │
-                  ▼
-               FastAPI
-                  │
-                  ▼
-           Next.js + React
-                  │
-                  ▼
-       Interactive Analytics
-                  │
-                  ▼
-      Real-Time Grid Monitoring
+
+       150K+ Telemetry Records
+
+                  │
+
+                  ▼
+
+               PySpark
+
+                  │
+
+                  ▼
+
+          Bronze → Silver → Gold
+
+                  │
+
+                  ▼
+
+         Anomaly Detection
+
+                  │
+
+                  ▼
+
+            Risk Scoring
+
+                  │
+
+                  ▼
+
+               FastAPI
+
+                  │
+
+                  ▼
+
+           Next.js + React
+
+                  │
+
+                  ▼
+
+       Interactive Analytics
+
+                  │
+
+                  ▼
+
+      Real-Time Grid Monitoring
+
 ```
 
 GridPulse demonstrates how **Big Data, Artificial Intelligence, real-time processing, predictive analytics and interactive visualization** can be combined to build a modern Smart Energy Grid Monitoring and Predictive Failure Analytics platform.
