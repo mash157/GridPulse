@@ -472,7 +472,7 @@ The main dashboard contains:
 
 <p align="center">
 
-  <img src="./screeenshots/dashboard.png" alt="GridPulse Overview Bright Mode" width="100%">
+  <img src="./screeenshots/Overview Bright Mode.png" alt="GridPulse Overview Bright Mode" width="100%">
 
 </p>
 
@@ -1795,5 +1795,7 @@ GridPulse demonstrates how **Big Data, Artificial Intelligence, real-time proces
 ### Smart Energy Grid Monitoring & Predictive Failure Analytics
 
 **Built with Python • PySpark • FastAPI • Next.js • React • Plotly**
+
+###Made with ❤️ by [@mash157](https://github.com/Mash157)
 
 </p>
