@@ -1,4 +1,128 @@
 # ⚡ GridPulse — Smart Energy Grid Monitoring & Predictive Failure Analytics
+# 📸 Project Screenshots
+
+---
+
+## ☀️ Overview — Bright Mode
+
+<p align="center">
+
+  <img src="./screeenshots/Overview Bright Mode.png" alt="GridPulse Overview Bright Mode" width="100%">
+
+</p>
+
+-----
+## 🏠 Main Dashboard
+
+<p align="center">
+
+  <img src="./screeenshots/dashboard.png" alt="GridPulse Main Dashboard" width="100%">
+
+</p>
+---
+
+# 🗺️ Grid Monitoring
+
+Grid Monitoring provides an operational and geographical view of the electrical grid.
+
+---
+
+## 🗺️ Live Grid Map
+
+The Live Grid Map displays:
+
+- Substations
+
+- Transformer locations
+
+- Grid connections
+
+- Regional information
+
+- Transformer status
+
+- Risk information
+
+- Live grid activity
+
+<p align="center">
+
+  <img src="./screeenshots/Grid%20Monitoring-Live%20Map.png" alt="Grid Monitoring Live Map" width="100%">
+
+</p>
+
+---
+
+## ⚙️ Equipment Status
+
+The Equipment Status section provides detailed transformer information.
+
+It can display:
+
+- Transformer ID
+
+- Substation
+
+- Region
+
+- Load
+
+- Temperature
+
+- Voltage
+
+- Current
+
+- Power
+
+- Power Factor
+
+- Frequency
+
+- Energy Generated
+
+- Energy Consumed
+
+- Communication Latency
+
+- Fault Indicator
+
+- Anomaly Type
+
+- Risk Score
+
+- Status
+
+<p align="center">
+
+  <img src="./screeenshots/Grid%20Monitoring-Equipment%20Status.png" alt="Grid Monitoring Equipment Status" width="100%">
+
+</p>
+
+---
+
+## ⚡ Power Flow
+
+Power Flow compares energy generation and consumption.
+
+It helps analyze:
+
+- Energy production
+
+- Energy consumption
+
+- Demand patterns
+
+- Generation-consumption differences
+
+- Regional energy behavior
+
+<p align="center">
+
+  <img src="./screeenshots/Grid%20Monitoring-Power%20Flow.png" alt="Grid Monitoring Power Flow" width="100%">
+
+</p>
+
 
 <p align="center">
 
@@ -453,132 +577,6 @@ The main dashboard contains:
 - Recent Alerts
 
 - Live Telemetry Feed
-
----
-
-# 📸 Project Screenshots
-
-## 🏠 Main Dashboard
-
-<p align="center">
-
-  <img src="./screeenshots/dashboard.png" alt="GridPulse Main Dashboard" width="100%">
-
-</p>
-
----
-
-## ☀️ Overview — Bright Mode
-
-<p align="center">
-
-  <img src="./screeenshots/Overview Bright Mode.png" alt="GridPulse Overview Bright Mode" width="100%">
-
-</p>
-
----
-
-# 🗺️ Grid Monitoring
-
-Grid Monitoring provides an operational and geographical view of the electrical grid.
-
----
-
-## 🗺️ Live Grid Map
-
-The Live Grid Map displays:
-
-- Substations
-
-- Transformer locations
-
-- Grid connections
-
-- Regional information
-
-- Transformer status
-
-- Risk information
-
-- Live grid activity
-
-<p align="center">
-
-  <img src="./screeenshots/Grid%20Monitoring-Live%20Map.png" alt="Grid Monitoring Live Map" width="100%">
-
-</p>
-
----
-
-## ⚙️ Equipment Status
-
-The Equipment Status section provides detailed transformer information.
-
-It can display:
-
-- Transformer ID
-
-- Substation
-
-- Region
-
-- Load
-
-- Temperature
-
-- Voltage
-
-- Current
-
-- Power
-
-- Power Factor
-
-- Frequency
-
-- Energy Generated
-
-- Energy Consumed
-
-- Communication Latency
-
-- Fault Indicator
-
-- Anomaly Type
-
-- Risk Score
-
-- Status
-
-<p align="center">
-
-  <img src="./screeenshots/Grid%20Monitoring-Equipment%20Status.png" alt="Grid Monitoring Equipment Status" width="100%">
-
-</p>
-
----
-
-## ⚡ Power Flow
-
-Power Flow compares energy generation and consumption.
-
-It helps analyze:
-
-- Energy production
-
-- Energy consumption
-
-- Demand patterns
-
-- Generation-consumption differences
-
-- Regional energy behavior
-
-<p align="center">
-
-  <img src="./screeenshots/Grid%20Monitoring-Power%20Flow.png" alt="Grid Monitoring Power Flow" width="100%">
-
-</p>
 
 ---
 
