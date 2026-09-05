@@ -1,0 +1,41 @@
+anomaly_type,status,anomaly_count,avg_risk_score,avg_load_percent,avg_temperature_c,avg_voltage_kv
+Generation Drop,Warning,12145,58.85,61.88,50.57,40.03
+Overload,High Risk,8924,77.25,84.16,53.43,40.0
+Generation Drop,Low,6830,34.65,50.65,43.49,40.01
+Compound Anomaly,Critical,5203,97.77,92.45,64.56,39.87
+Generation Drop,High Risk,4975,74.61,76.99,54.04,40.08
+Frequency Deviation,Warning,3937,61.01,63.1,51.64,40.0
+Frequency Deviation,High Risk,3797,74.79,74.18,55.35,39.99
+Voltage Fluctuation,Warning,3123,60.02,61.78,50.86,40.06
+Overload,Critical,3061,89.95,87.74,60.54,39.91
+Voltage Fluctuation,High Risk,2457,74.67,74.15,54.98,39.96
+Power Factor Anomaly,Warning,2067,60.85,63.98,51.86,39.98
+Unexpected Consumption,Warning,2058,58.75,61.98,50.48,40.01
+Power Factor Anomaly,High Risk,1721,75.02,75.87,55.51,39.96
+Transformer Fault,Warning,1710,60.13,60.85,50.23,39.94
+Overload,Warning,1649,58.77,62.62,50.35,40.08
+Frequency Deviation,Critical,1588,90.57,86.54,61.58,39.91
+Voltage Fluctuation,Critical,1514,90.65,86.25,62.1,40.08
+Temperature Spike,Warning,1500,58.32,61.53,50.43,39.88
+Communication Failure,Warning,1473,59.45,62.93,51.05,39.96
+Transformer Fault,High Risk,1383,78.1,70.84,54.49,39.99
+Unexpected Consumption,Low,1148,34.73,50.82,43.48,39.95
+Voltage Fluctuation,Low,944,34.68,50.74,43.49,39.95
+Temperature Spike,Low,927,34.83,50.78,43.55,39.98
+Overload,Low,896,34.34,50.25,43.38,40.03
+Compound Anomaly,Warning,873,58.47,61.89,50.39,39.96
+Communication Failure,Low,844,34.55,50.32,43.45,40.04
+Frequency Deviation,Low,837,34.68,50.41,43.47,40.01
+Transformer Fault,Low,832,34.78,50.14,43.49,40.0
+Power Factor Anomaly,Critical,806,90.49,86.94,61.65,40.15
+Transformer Fault,Critical,779,91.95,83.53,56.95,39.95
+Power Factor Anomaly,Low,760,35.01,50.83,43.5,39.95
+Unexpected Consumption,High Risk,690,74.49,77.11,53.79,39.9
+Generation Drop,Critical,662,89.67,86.15,59.79,39.88
+Communication Failure,High Risk,611,74.28,74.67,55.21,40.11
+Compound Anomaly,Low,523,34.18,49.95,43.4,39.95
+Temperature Spike,High Risk,289,73.03,75.25,54.11,40.05
+Communication Failure,Critical,224,90.71,86.12,61.78,40.24
+Compound Anomaly,High Risk,181,73.89,75.89,54.8,40.31
+Unexpected Consumption,Critical,108,90.21,86.29,60.05,40.55
+Temperature Spike,Critical,25,98.92,98.66,70.4,39.24

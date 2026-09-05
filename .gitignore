@@ -1,0 +1,39 @@
+# Node
+node_modules/
+.next/
+out/
+dist/
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+
+# Environment / secrets
+.env
+.env.*
+!.env.example
+
+# Java / JDK
+jdk-*/
+*.zip
+
+# Logs / generated output
+*.log
+*_output.txt
+test_output*.txt
+gen_output.txt
+git_status.txt
+backend.log
+
+# Temporary files
+tmp_*
+*.tmp
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

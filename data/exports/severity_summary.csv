@@ -1,0 +1,6 @@
+status,count,avg_risk_score,avg_load_percent,avg_temperature_c
+Critical,13970,93.17,88.82,62.19
+High Risk,25028,75.77,78.35,54.27
+Warning,30535,59.44,62.19,50.8
+Low,14541,34.66,50.57,43.48
+Normal,65926,16.54,33.61,40.54

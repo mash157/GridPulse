@@ -1,0 +1,335 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --gp-bg: #f0f2f5;
+  --gp-surface: #ffffff;
+  --gp-surface-2: #f8f9fa;
+  --gp-surface-3: #f0f2f5;
+  --gp-border: #e2e8f0;
+  --gp-text: #1a202c;
+  --gp-text-muted: #64748b;
+  --gp-text-dim: #94a3b8;
+  --gp-primary: #3b82f6;
+  --gp-primary-soft: rgba(59, 130, 246, 0.1);
+  --gp-accent: #6366f1;
+  --gp-success: #22c55e;
+  --gp-warning: #f59e0b;
+  --gp-danger: #ef4444;
+  --gp-info: #06b6d4;
+  --gp-orange: #f97316;
+  --gp-cyan: #22d3ee;
+  --gp-purple: #a855f7;
+  --gp-sidebar-bg: #ffffff;
+  --gp-sidebar-text: #64748b;
+  --gp-sidebar-text-strong: #1e293b;
+  --gp-sidebar-active: #3b82f6;
+  --gp-sidebar-hover: rgba(59, 130, 246, 0.06);
+  --gp-sidebar-border: #e2e8f0;
+  --gp-sidebar-btn-bg: #f1f5f9;
+  --gp-sidebar-btn-border: #e2e8f0;
+  --gp-sidebar-logo-text: #1e293b;
+  --gp-card-shadow: 0 1px 3px rgba(0, 0, 0, 0.06), 0 1px 2px rgba(0, 0, 0, 0.04);
+  --gp-chart-bg: #ffffff;
+  --gp-grid-color: #e2e8f0;
+}
+
+.dark {
+  --gp-bg: #0b0f1a;
+  --gp-surface: #111827;
+  --gp-surface-2: #1a2234;
+  --gp-surface-3: #1e293b;
+  --gp-border: #1e293b;
+  --gp-text: #f1f5f9;
+  --gp-text-muted: #94a3b8;
+  --gp-text-dim: #64748b;
+  --gp-primary: #3b82f6;
+  --gp-primary-soft: rgba(59, 130, 246, 0.15);
+  --gp-accent: #818cf8;
+  --gp-success: #22c55e;
+  --gp-warning: #f59e0b;
+  --gp-danger: #ef4444;
+  --gp-info: #06b6d4;
+  --gp-orange: #fb923c;
+  --gp-cyan: #22d3ee;
+  --gp-purple: #c084fc;
+  --gp-sidebar-bg: #0b0f1a;
+  --gp-sidebar-text: #94a3b8;
+  --gp-sidebar-text-strong: #f1f5f9;
+  --gp-sidebar-active: #3b82f6;
+  --gp-sidebar-hover: rgba(255, 255, 255, 0.05);
+  --gp-sidebar-border: rgba(255, 255, 255, 0.08);
+  --gp-sidebar-btn-bg: rgba(255, 255, 255, 0.05);
+  --gp-sidebar-btn-border: rgba(255, 255, 255, 0.08);
+  --gp-sidebar-logo-text: #f1f5f9;
+  --gp-card-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+  --gp-chart-bg: #111827;
+  --gp-grid-color: #1e293b;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  background: var(--gp-bg);
+  color: var(--gp-text);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  min-height: 100vh;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--gp-text-dim);
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--gp-text-muted);
+}
+
+/* Card */
+.gp-card {
+  background: var(--gp-surface);
+  border: 1px solid var(--gp-border);
+  border-radius: 12px;
+  box-shadow: var(--gp-card-shadow);
+}
+
+/* Bottom dashboard row: identical outer card shape (height, radius, border,
+   padding, alignment) for Power Gen vs Consumption, 3D Grid Analytics and
+   Recent Alerts. The grid stretches every card to the same row height. */
+.bottom-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+  align-items: stretch;
+}
+
+.bottom-grid > .gp-card {
+  height: 100%;
+  min-height: 0;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.bottom-grid > .gp-card > .chart-flex {
+  flex: 1 1 auto;
+  min-height: 0;
+}
+
+@media (max-width: 1100px) {
+  .bottom-grid {
+    grid-template-columns: 1fr;
+  }
+  .bottom-grid > .gp-card {
+    height: auto;
+  }
+}
+
+/* KPI Card */
+.kpi-card {
+  background: var(--gp-surface);
+  border: 1px solid var(--gp-border);
+  border-radius: 12px;
+  padding: 16px 20px;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.2s ease;
+}
+
+.kpi-card:hover {
+  border-color: var(--gp-primary);
+  box-shadow: 0 4px 12px rgba(59, 130, 246, 0.1);
+}
+
+.kpi-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  border-radius: 12px 12px 0 0;
+}
+
+.kpi-card.gen::before { background: var(--gp-success); }
+.kpi-card.cons::before { background: var(--gp-primary); }
+.kpi-card.load::before { background: var(--gp-orange); }
+.kpi-card.trans::before { background: var(--gp-info); }
+.kpi-card.fault::before { background: var(--gp-danger); }
+.kpi-card.anom::before { background: var(--gp-purple); }
+
+/* Live indicator */
+.live-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--gp-success);
+  animation: livePulse 2s ease-in-out infinite;
+}
+
+@keyframes livePulse {
+  0%, 100% { opacity: 1; box-shadow: 0 0 0 0 rgba(34, 197, 94, 0.4); }
+  50% { opacity: 0.8; box-shadow: 0 0 0 6px rgba(34, 197, 94, 0); }
+}
+
+.offline-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--gp-danger);
+}
+
+/* Section titles */
+.section-title {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--gp-text);
+  letter-spacing: -0.01em;
+}
+
+.section-subtitle {
+  font-size: 12px;
+  color: var(--gp-text-muted);
+}
+
+/* Table styles */
+.gp-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+}
+
+.gp-table th {
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--gp-text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 8px 12px;
+  text-align: left;
+  border-bottom: 1px solid var(--gp-border);
+}
+
+.gp-table td {
+  font-size: 13px;
+  padding: 10px 12px;
+  border-bottom: 1px solid var(--gp-border);
+  color: var(--gp-text);
+}
+
+.gp-table tr:last-child td {
+  border-bottom: none;
+}
+
+.gp-table tr:hover td {
+  background: var(--gp-surface-2);
+}
+
+/* Status badges */
+.status-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 2px 8px;
+  border-radius: 6px;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+
+.status-critical { background: rgba(239, 68, 68, 0.15); color: #ef4444; }
+.status-high { background: rgba(249, 115, 22, 0.15); color: #f97316; }
+.status-warning { background: rgba(245, 158, 11, 0.15); color: #f59e0b; }
+.status-normal { background: rgba(34, 197, 94, 0.15); color: #22c55e; }
+.status-low { background: rgba(59, 130, 246, 0.15); color: #3b82f6; }
+
+/* Live feed ticker */
+.ticker-wrapper {
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.ticker-content {
+  display: inline-block;
+  animation: ticker 40s linear infinite;
+}
+
+.ticker-content:hover {
+  animation-play-state: paused;
+}
+
+/* Plotly overrides */
+.js-plotly-plot .plotly .modebar {
+  display: none !important;
+}
+
+/* Pulse animation for live indicators */
+@keyframes pulse-ring {
+  0% { transform: scale(0.8); opacity: 1; }
+  100% { transform: scale(2); opacity: 0; }
+}
+
+/* Select dropdown fix for dark mode */
+select {
+  color-scheme: light;
+}
+
+.dark select {
+  color-scheme: dark;
+}
+
+/* Ensure Plotly charts respect theme */
+.dark .js-plotly-plot .plotly .main-svg text {
+  fill: #94a3b8 !important;
+}
+
+/* Leaflet map overrides */
+.leaflet-container {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  background: transparent;
+}
+
+.leaflet-tooltip {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-size: 12px;
+  padding: 8px 12px;
+  border-radius: 8px;
+  border: 1px solid var(--gp-border);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.dark .leaflet-tooltip {
+  background: #1a2234;
+  color: #f1f5f9;
+  border-color: #2d3a4f;
+}
+
+.light .leaflet-tooltip {
+  background: #ffffff;
+  color: #1a202c;
+  border-color: #e2e8f0;
+}
+
+.leaflet-control-attribution {
+  display: none !important;
+}

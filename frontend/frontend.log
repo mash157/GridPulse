@@ -1,0 +1,715 @@
+
+> gridpulse-frontend@1.0.0 dev
+> next dev
+
+  ▲ Next.js 14.2.15
+  - Local:        http://localhost:3000
+
+ ✓ Starting...
+ ✓ Ready in 1712ms
+ ○ Compiling / ...
+ ✓ Compiled / in 1769ms (585 modules)
+ GET / 200 in 1979ms
+ GET / 200 in 157ms
+ ○ Compiling /anomalies ...
+ ✓ Compiled /anomalies in 633ms (591 modules)
+ GET /anomalies 200 in 882ms
+ ○ Compiling /grid-monitoring ...
+ ✓ Compiled /grid-monitoring in 575ms (597 modules)
+ GET /grid-monitoring 200 in 739ms
+ GET /grid-monitoring 200 in 50ms
+ GET / 200 in 102ms
+ ✓ Compiled in 1030ms (611 modules)
+ ✓ Compiled in 184ms (312 modules)
+ ✓ Compiled in 1280ms (611 modules)
+ ✓ Compiled in 352ms (611 modules)
+ ✓ Compiled in 267ms (611 modules)
+ GET / 200 in 308ms
+ ✓ Compiled in 1002ms (611 modules)
+ ✓ Compiled in 569ms (611 modules)
+ ✓ Compiled in 292ms (597 modules)
+ ✓ Compiled in 478ms (611 modules)
+ ⨯ ./components/charts/Charts.tsx
+Error: 
+  [31mx[0m 'import', and 'export' cannot be used outside of module code
+    ,-[[36;1;4mC:\Users\USER\Downloads\GridPulse\frontend\components\charts\Charts.tsx[0m:35:1]
+ [2m35[0m |   onTimeRangeChange?: (value: string) => void;
+ [2m36[0m | }
+ [2m37[0m | 
+ [2m38[0m | export function EnergyByRegion({ regions, timeRange = "24h", onTimeRangeChange }: EnergyByRegionProps) {
+    : [31;1m^^^^^^[0m
+ [2m39[0m |   const regionData = regions || [];
+ [2m40[0m | 
+ [2m41[0m |   const sorted = [...regionData].sort(
+    `----
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./components/charts/Charts.tsx
+./components/Dashboard.tsx
+./app/page.tsx
+
+[20612:0905/174126.884:ERROR:electron\shell\common\node_bindings.cc:487] Most NODE_OPTIONs are not supported in packaged apps. See documentation for more details.
+ ⨯ ./components/charts/Charts.tsx
+Error: 
+  [31mx[0m 'import', and 'export' cannot be used outside of module code
+    ,-[[36;1;4mC:\Users\USER\Downloads\GridPulse\frontend\components\charts\Charts.tsx[0m:34:1]
+ [2m34[0m |   onTimeRangeChange?: (value: string) => void;
+ [2m35[0m | }
+ [2m36[0m | 
+ [2m37[0m | export function EnergyByRegion({ regions, timeRange = "24h", onTimeRangeChange }: EnergyByRegionProps) {
+    : [31;1m^^^^^^[0m
+ [2m38[0m |   const regionData = regions || [];
+ [2m39[0m | 
+ [2m40[0m |   const sorted = [...regionData].sort(
+    `----
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./components/charts/Charts.tsx
+./components/Dashboard.tsx
+./app/page.tsx
+ ○ Compiling /_error ...
+ ⨯ ./components/charts/Charts.tsx
+Error: 
+  [31mx[0m 'import', and 'export' cannot be used outside of module code
+    ,-[[36;1;4mC:\Users\USER\Downloads\GridPulse\frontend\components\charts\Charts.tsx[0m:34:1]
+ [2m34[0m |   onTimeRangeChange?: (value: string) => void;
+ [2m35[0m | }
+ [2m36[0m | 
+ [2m37[0m | export function EnergyByRegion({ regions, timeRange = "24h", onTimeRangeChange }: EnergyByRegionProps) {
+    : [31;1m^^^^^^[0m
+ [2m38[0m |   const regionData = regions || [];
+ [2m39[0m | 
+ [2m40[0m |   const sorted = [...regionData].sort(
+    `----
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./components/charts/Charts.tsx
+./components/Dashboard.tsx
+./app/page.tsx
+ GET / 500 in 7671ms
+ GET / 500 in 51ms
+
+[18448:0905/174258.550:ERROR:electron\shell\common\node_bindings.cc:487] Most NODE_OPTIONs are not supported in packaged apps. See documentation for more details.
+
+[34020:0905/174259.327:ERROR:electron\shell\common\node_bindings.cc:487] Most NODE_OPTIONs are not supported in packaged apps. See documentation for more details.
+ GET / 500 in 42ms
+ ✓ Compiled /_error in 690ms (837 modules)
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ GET / 200 in 289ms
+ GET / 200 in 302ms
+ ○ Compiling /_not-found ...
+ ⨯ ./components/charts/Charts.tsx
+Error: 
+  [31mx[0m Unexpected token `div`. Expected jsx identifier
+    ,-[[36;1;4mC:\Users\USER\Downloads\GridPulse\frontend\components\charts\Charts.tsx[0m:25:1]
+ [2m25[0m |   const colors = ["#22c55e", "#f59e0b", "#f97316", "#ef4444"];
+ [2m26[0m | 
+ [2m27[0m |   return (
+ [2m28[0m |     <div className="gp-card p-4 flex flex-col" style={{ mininline-size: 0, overflow: "hidden" }}>
+    : [31;1m     ^^^[0m
+ [2m29[0m |       <div className="flex items-center justify-between mb-2">
+ [2m30[0m |         <div className="section-title">Grid Health Distribution</div>
+ [2m31[0m |       </div>
+    `----
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./components/charts/Charts.tsx
+./components/Dashboard.tsx
+./app/page.tsx
+ GET /_next/static/webpack/f34261a31b584e7f.webpack.hot-update.json 500 in 23ms
+ ⚠ Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+ GET / 500 in 16ms
+ ⨯ ./components/charts/Charts.tsx
+Error: 
+  [31mx[0m Unexpected token `div`. Expected jsx identifier
+    ,-[[36;1;4mC:\Users\USER\Downloads\GridPulse\frontend\components\charts\Charts.tsx[0m:25:1]
+ [2m25[0m |   const colors = ["#22c55e", "#f59e0b", "#f97316", "#ef4444"];
+ [2m26[0m | 
+ [2m27[0m |   return (
+ [2m28[0m |     <div className="gp-card p-4 flex flex-col" style={{ mininline-size: 0, overflow: "hidden" }}>
+    : [31;1m     ^^^[0m
+ [2m29[0m |       <div className="flex items-center justify-between mb-2">
+ [2m30[0m |         <div className="section-title">Grid Health Distribution</div>
+ [2m31[0m |       </div>
+    `----
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./components/charts/Charts.tsx
+./components/Dashboard.tsx
+./app/page.tsx
+ ⨯ ./components/charts/Charts.tsx
+Error: 
+  [31mx[0m Unexpected token `div`. Expected jsx identifier
+    ,-[[36;1;4mC:\Users\USER\Downloads\GridPulse\frontend\components\charts\Charts.tsx[0m:25:1]
+ [2m25[0m |   const colors = ["#22c55e", "#f59e0b", "#f97316", "#ef4444"];
+ [2m26[0m | 
+ [2m27[0m |   return (
+ [2m28[0m |     <div className="gp-card p-4 flex flex-col" style={{ mininline-size: 0, overflow: "hidden" }}>
+    : [31;1m     ^^^[0m
+ [2m29[0m |       <div className="flex items-center justify-between mb-2">
+ [2m30[0m |         <div className="section-title">Grid Health Distribution</div>
+ [2m31[0m |       </div>
+    `----
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./components/charts/Charts.tsx
+./components/Dashboard.tsx
+./app/page.tsx
+ GET / 500 in 44ms
+ GET / 500 in 41ms
+ ⨯ ./components/charts/Charts.tsx
+Error: 
+  [31mx[0m Unexpected token `div`. Expected jsx identifier
+    ,-[[36;1;4mC:\Users\USER\Downloads\GridPulse\frontend\components\charts\Charts.tsx[0m:25:1]
+ [2m25[0m |   const colors = ["#22c55e", "#f59e0b", "#f97316", "#ef4444"];
+ [2m26[0m | 
+ [2m27[0m |   return (
+ [2m28[0m |     <div className="gp-card p-4 flex flex-col" style={{ mininline-size: 0, overflow: "hidden" }}>
+    : [31;1m     ^^^[0m
+ [2m29[0m |       <div className="flex items-center justify-between mb-2">
+ [2m30[0m |         <div className="section-title">Grid Health Distribution</div>
+ [2m31[0m |       </div>
+    `----
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./components/charts/Charts.tsx
+./components/Dashboard.tsx
+./app/page.tsx
+ ⨯ ./components/charts/Charts.tsx
+Error: 
+  [31mx[0m Unexpected token `div`. Expected jsx identifier
+    ,-[[36;1;4mC:\Users\USER\Downloads\GridPulse\frontend\components\charts\Charts.tsx[0m:25:1]
+ [2m25[0m |   const colors = ["#22c55e", "#f59e0b", "#f97316", "#ef4444"];
+ [2m26[0m | 
+ [2m27[0m |   return (
+ [2m28[0m |     <div className="gp-card p-4 flex flex-col" style={{ mininline-size: 0, overflow: "hidden" }}>
+    : [31;1m     ^^^[0m
+ [2m29[0m |       <div className="flex items-center justify-between mb-2">
+ [2m30[0m |         <div className="section-title">Grid Health Distribution</div>
+ [2m31[0m |       </div>
+    `----
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./components/charts/Charts.tsx
+./components/Dashboard.tsx
+./app/page.tsx
+ ⨯ ./components/charts/Charts.tsx
+Error: 
+  [31mx[0m Unexpected token `div`. Expected jsx identifier
+    ,-[[36;1;4mC:\Users\USER\Downloads\GridPulse\frontend\components\charts\Charts.tsx[0m:25:1]
+ [2m25[0m |   const colors = ["#22c55e", "#f59e0b", "#f97316", "#ef4444"];
+ [2m26[0m | 
+ [2m27[0m |   return (
+ [2m28[0m |     <div className="gp-card p-4 flex flex-col" style={{ mininline-size: 0, overflow: "hidden" }}>
+    : [31;1m     ^^^[0m
+ [2m29[0m |       <div className="flex items-center justify-between mb-2">
+ [2m30[0m |         <div className="section-title">Grid Health Distribution</div>
+ [2m31[0m |       </div>
+    `----
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./components/charts/Charts.tsx
+./components/Dashboard.tsx
+./app/page.tsx
+ ⨯ ./components/charts/Charts.tsx
+Error: 
+  [31mx[0m Unexpected token `div`. Expected jsx identifier
+    ,-[[36;1;4mC:\Users\USER\Downloads\GridPulse\frontend\components\charts\Charts.tsx[0m:25:1]
+ [2m25[0m |   const colors = ["#22c55e", "#f59e0b", "#f97316", "#ef4444"];
+ [2m26[0m | 
+ [2m27[0m |   return (
+ [2m28[0m |     <div className="gp-card p-4 flex flex-col" style={{ mininline-size: 0, overflow: "hidden" }}>
+    : [31;1m     ^^^[0m
+ [2m29[0m |       <div className="flex items-center justify-between mb-2">
+ [2m30[0m |         <div className="section-title">Grid Health Distribution</div>
+ [2m31[0m |       </div>
+    `----
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./components/charts/Charts.tsx
+./components/Dashboard.tsx
+./app/page.tsx
+ GET / 500 in 44ms
+ ⨯ ./components/charts/Charts.tsx
+Error: 
+  [31mx[0m Unexpected token `div`. Expected jsx identifier
+    ,-[[36;1;4mC:\Users\USER\Downloads\GridPulse\frontend\components\charts\Charts.tsx[0m:25:1]
+ [2m25[0m |   const colors = ["#22c55e", "#f59e0b", "#f97316", "#ef4444"];
+ [2m26[0m | 
+ [2m27[0m |   return (
+ [2m28[0m |     <div className="gp-card p-4 flex flex-col" style={{ mininline-size: 0, overflow: "hidden" }}>
+    : [31;1m     ^^^[0m
+ [2m29[0m |       <div className="flex items-center justify-between mb-2">
+ [2m30[0m |         <div className="section-title">Grid Health Distribution</div>
+ [2m31[0m |       </div>
+    `----
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./components/charts/Charts.tsx
+./components/Dashboard.tsx
+./app/page.tsx
+ ⨯ ./components/charts/Charts.tsx
+Error: 
+  [31mx[0m Unexpected token `div`. Expected jsx identifier
+    ,-[[36;1;4mC:\Users\USER\Downloads\GridPulse\frontend\components\charts\Charts.tsx[0m:25:1]
+ [2m25[0m |   const colors = ["#22c55e", "#f59e0b", "#f97316", "#ef4444"];
+ [2m26[0m | 
+ [2m27[0m |   return (
+ [2m28[0m |     <div className="gp-card p-4 flex flex-col" style={{ mininline-size: 0, overflow: "hidden" }}>
+    : [31;1m     ^^^[0m
+ [2m29[0m |       <div className="flex items-center justify-between mb-2">
+ [2m30[0m |         <div className="section-title">Grid Health Distribution</div>
+ [2m31[0m |       </div>
+    `----
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./components/charts/Charts.tsx
+./components/Dashboard.tsx
+./app/page.tsx
+ ✓ Compiled /_not-found in 546ms (826 modules)
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ⚠ Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+ GET /_next/static/webpack/14aba720880056c7.webpack.hot-update.json 404 in 480ms
+ GET /_next/static/webpack/14aba720880056c7.webpack.hot-update.json 404 in 478ms
+ GET / 200 in 105ms
+ GET / 200 in 98ms
+ ⨯ ./components/charts/Charts.tsx
+Error: 
+  [31mx[0m Unexpected token `div`. Expected jsx identifier
+    ,-[[36;1;4mC:\Users\USER\Downloads\GridPulse\frontend\components\charts\Charts.tsx[0m:25:1]
+ [2m25[0m |   const colors = ["#22c55e", "#f59e0b", "#f97316", "#ef4444"];
+ [2m26[0m | 
+ [2m27[0m |   return (
+ [2m28[0m |     <div className="gp-card p-4 flex flex-col" style={{ mininline-size: 0, overflow: "hidden" }}>
+    : [31;1m     ^^^[0m
+ [2m29[0m |       <div className="flex items-center justify-between mb-2">
+ [2m30[0m |         <div className="section-title">Grid Health Distribution</div>
+ [2m31[0m |       </div>
+    `----
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./components/charts/Charts.tsx
+./components/Dashboard.tsx
+./app/page.tsx
+ ⨯ ./components/charts/Charts.tsx
+Error: 
+  [31mx[0m Unexpected token `div`. Expected jsx identifier
+    ,-[[36;1;4mC:\Users\USER\Downloads\GridPulse\frontend\components\charts\Charts.tsx[0m:25:1]
+ [2m25[0m |   const colors = ["#22c55e", "#f59e0b", "#f97316", "#ef4444"];
+ [2m26[0m | 
+ [2m27[0m |   return (
+ [2m28[0m |     <div className="gp-card p-4 flex flex-col" style={{ mininline-size: 0, overflow: "hidden" }}>
+    : [31;1m     ^^^[0m
+ [2m29[0m |       <div className="flex items-center justify-between mb-2">
+ [2m30[0m |         <div className="section-title">Grid Health Distribution</div>
+ [2m31[0m |       </div>
+    `----
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./components/charts/Charts.tsx
+./components/Dashboard.tsx
+./app/page.tsx
+ ⨯ ./components/charts/Charts.tsx
+Error: 
+  [31mx[0m Unexpected token `div`. Expected jsx identifier
+    ,-[[36;1;4mC:\Users\USER\Downloads\GridPulse\frontend\components\charts\Charts.tsx[0m:25:1]
+ [2m25[0m |   const colors = ["#22c55e", "#f59e0b", "#f97316", "#ef4444"];
+ [2m26[0m | 
+ [2m27[0m |   return (
+ [2m28[0m |     <div className="gp-card p-4 flex flex-col" style={{ mininline-size: 0, overflow: "hidden" }}>
+    : [31;1m     ^^^[0m
+ [2m29[0m |       <div className="flex items-center justify-between mb-2">
+ [2m30[0m |         <div className="section-title">Grid Health Distribution</div>
+ [2m31[0m |       </div>
+    `----
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./components/charts/Charts.tsx
+./components/Dashboard.tsx
+./app/page.tsx
+ ✓ Compiled in 486ms (837 modules)
+ ✓ Compiled in 401ms (837 modules)
+ ✓ Compiled in 234ms (837 modules)
+ GET / 200 in 255ms
+ GET / 200 in 97ms
+ ⨯ ./components/charts/Charts.tsx
+Error: 
+  [31mx[0m Unexpected token `div`. Expected jsx identifier
+    ,-[[36;1;4mC:\Users\USER\Downloads\GridPulse\frontend\components\charts\Charts.tsx[0m:26:1]
+ [2m26[0m |   const colors = ["#22c55e", "#f59e0b", "#f97316", "#ef4444"];
+ [2m27[0m | 
+ [2m28[0m |   return (
+ [2m29[0m |     <div className="gp-card p-4 flex flex-col" style={{ mininline-size: 0, overflow: "hidden" }}>
+    : [31;1m     ^^^[0m
+ [2m30[0m |       <div className="flex items-center justify-between mb-2">
+ [2m31[0m |         <div className="section-title">Grid Health Distribution</div>
+ [2m32[0m |       </div>
+    `----
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./components/charts/Charts.tsx
+./components/Dashboard.tsx
+./app/page.tsx
+ ✓ Compiled in 381ms (837 modules)
+ GET / 200 in 247ms
+ GET / 200 in 96ms
+ ○ Compiling /forecasting ...
+ ✓ Compiled /forecasting in 773ms (843 modules)
+ GET /forecasting 200 in 1148ms
+ ✓ Compiled in 428ms (499 modules)
+ ○ Compiling /reports ...
+ ✓ Compiled /reports in 533ms (849 modules)
+ GET /reports 200 in 683ms
+ GET / 200 in 90ms
+ GET / 200 in 119ms
+ ○ Compiling /3d-analytics ...
+ ✓ Compiled /3d-analytics in 693ms (851 modules)
+ GET /3d-analytics 200 in 977ms
+ GET /grid-monitoring 200 in 113ms
+ ○ Compiling /grid-monitoring/live-map ...
+ ✓ Compiled /grid-monitoring/live-map in 601ms (857 modules)
+ GET /grid-monitoring/live-map 200 in 834ms
+ GET / 200 in 161ms
+ GET / 200 in 92ms
+ ⚠ Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+ ✓ Compiled in 2.4s (853 modules)
+ GET / 200 in 703ms
+ ✓ Compiled in 471ms (893 modules)
+ ✓ Compiled in 327ms (893 modules)
+ ✓ Compiled in 283ms (893 modules)
+ ✓ Compiled in 316ms (893 modules)
+ ✓ Compiled in 357ms (893 modules)
+ ✓ Compiled in 196ms (893 modules)
+ ✓ Compiled in 202ms (893 modules)
+ GET / 200 in 220ms
+ ✓ Compiled in 273ms (525 modules)
+ ✓ Compiled in 606ms (893 modules)
+ ⚠ Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+ GET / 200 in 176ms
+ ✓ Compiled in 523ms (893 modules)
+ ✓ Compiled in 364ms (525 modules)
+ ✓ Compiled in 337ms (893 modules)
+ GET / 200 in 202ms
+ ○ Compiling /anomalies ...
+ ✓ Compiled /anomalies in 520ms (372 modules)
+ ○ Compiling /grid-monitoring/equipment-status ...
+ ✓ Compiled /grid-monitoring/equipment-status in 697ms (885 modules)
+ GET / 200 in 81ms
+ GET /anomalies 200 in 34ms
+ ✓ Compiled /transformers in 306ms (887 modules)
+ GET /transformers 200 in 388ms
+ ✓ Compiled /3d-analytics in 95ms (376 modules)
+ GET /3d-analytics 200 in 181ms
+ GET /grid-monitoring 200 in 64ms
+ GET /grid-monitoring/live-map 200 in 41ms
+ ✓ Compiled in 458ms (891 modules)
+ ⚠ Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+ GET / 200 in 71ms
+ ✓ Compiled in 361ms (905 modules)
+ GET / 200 in 88ms
+ GET / 200 in 86ms
+ GET / 200 in 89ms
+ GET / 200 in 86ms
+ GET / 200 in 108ms
+ GET / 200 in 87ms
+ GET / 200 in 110ms
+ GET / 200 in 102ms
+ ✓ Compiled in 587ms (897 modules)
+ ✓ Compiled in 210ms (529 modules)
+ GET / 200 in 224ms
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ✓ Compiled in 852ms (897 modules)
+ GET / 200 in 795ms
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ✓ Compiled in 935ms (897 modules)
+ GET / 200 in 705ms
+ ✓ Compiled in 522ms (897 modules)
+ ✓ Compiled in 555ms (897 modules)
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ GET / 200 in 183ms
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ✓ Compiled in 335ms (897 modules)
+ GET / 200 in 317ms
+ ✓ Compiled in 668ms (897 modules)
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ GET / 200 in 195ms
+ GET / 200 in 106ms
+ ✓ Compiled in 967ms (897 modules)
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ GET / 200 in 187ms
+ ✓ Compiled in 913ms (897 modules)
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ GET / 200 in 188ms
+ ✓ Compiled in 562ms (897 modules)
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ GET / 200 in 183ms
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ✓ Compiled in 267ms (897 modules)
+ GET / 200 in 237ms
+ ✓ Compiled in 196ms (897 modules)
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ GET / 200 in 77ms
+ ✓ Compiled in 1037ms (897 modules)
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ GET / 200 in 89ms
+ GET / 200 in 94ms
+ GET / 200 in 116ms
+ GET / 200 in 105ms
+ GET / 200 in 93ms
+ GET / 200 in 130ms
+ GET / 200 in 101ms
+ GET / 200 in 45ms
+ ✓ Compiled /anomalies in 255ms (372 modules)
+ GET /anomalies 200 in 439ms
+ GET / 200 in 239ms
+ GET /transformers 200 in 67ms
+ GET /3d-analytics 200 in 50ms
+ GET /grid-monitoring 200 in 48ms
+ ✓ Compiled /grid-monitoring/live-map in 303ms (376 modules)
+ GET /grid-monitoring/live-map 200 in 459ms
+ GET /grid-monitoring/equipment-status 200 in 54ms
+ ✓ Compiled in 429ms (897 modules)
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+Warning: React.jsx: type is invalid -- expected a string (for built-in components) or a class/function (for composite components) but got: object. You likely forgot to export your component from the file it's defined in, or you might have mixed up default and named imports.
+    at Dashboard (webpack-internal:///(ssr)/./components/Dashboard.tsx:32:294)
+    at Home
+    at ClientPageRoot (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/client-page.js:14:11)
+    at Lazy
+    at InnerLayoutRouter (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/layout-router.js:242:11)
+    at RedirectErrorBoundary (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/redirect-boundary.js:73:9)
+    at RedirectBoundary (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/redirect-boundary.js:81:11)
+    at NotFoundErrorBoundary (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/not-found-boundary.js:76:9)
+    at NotFoundBoundary (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/not-found-boundary.js:84:11)
+    at LoadingBoundary (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/layout-router.js:347:11)
+    at ErrorBoundary (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/error-boundary.js:158:11)
+    at InnerScrollAndFocusHandler (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/layout-router.js:153:9)
+    at ScrollAndFocusHandler (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/layout-router.js:228:11)
+    at RenderFromTemplateContext (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/render-from-template-context.js:16:44)
+    at Lazy
+    at OuterLayoutRouter (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/layout-router.js:367:11)
+    at Lazy
+    at GridDataProvider (webpack-internal:///(ssr)/./lib/GridDataProvider.tsx:53:29)
+    at Lazy
+    at ThemeProvider (webpack-internal:///(ssr)/./components/ui/ThemeProvider.tsx:25:26)
+    at Lazy
+    at body
+    at html
+    at RedirectErrorBoundary (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/redirect-boundary.js:73:9)
+    at RedirectBoundary (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/redirect-boundary.js:81:11)
+    at ReactDevOverlay (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/react-dev-overlay/app/ReactDevOverlay.js:87:9)
+    at HotReload (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/react-dev-overlay/app/hot-reloader-client.js:322:11)
+    at Router (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/app-router.js:202:11)
+    at ErrorBoundaryHandler (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/error-boundary.js:112:9)
+    at ErrorBoundary (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/error-boundary.js:158:11)
+    at AppRouter (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/app-router.js:564:13)
+    at Lazy
+    at r6 (C:\Users\USER\Downloads\GridPulse\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:39:19009)
+    at r6 (C:\Users\USER\Downloads\GridPulse\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:39:19009)
+    at ServerInsertedHTMLProvider (C:\Users\USER\Downloads\GridPulse\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:39:24756)
+ ⨯ Internal error: Error: Element type is invalid: expected a string (for built-in components) or a class/function (for composite components) but got: object. You likely forgot to export your component from the file it's defined in, or you might have mixed up default and named imports.
+    at aw (C:\Users\USER\Downloads\GridPulse\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:46775)
+    at a_ (C:\Users\USER\Downloads\GridPulse\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:49776)
+    at aj (C:\Users\USER\Downloads\GridPulse\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:53793)
+    at C:\Users\USER\Downloads\GridPulse\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:42336
+    at aw (C:\Users\USER\Downloads\GridPulse\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:42822)
+    at a_ (C:\Users\USER\Downloads\GridPulse\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:49776)
+    at aj (C:\Users\USER\Downloads\GridPulse\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:53793)
+    at aC (C:\Users\USER\Downloads\GridPulse\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:52874)
+    at a_ (C:\Users\USER\Downloads\GridPulse\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:50095)
+    at aj (C:\Users\USER\Downloads\GridPulse\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:53793)
+    at C:\Users\USER\Downloads\GridPulse\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:42336
+    at aw (C:\Users\USER\Downloads\GridPulse\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:42822)
+    at a_ (C:\Users\USER\Downloads\GridPulse\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:49776)
+    at aj (C:\Users\USER\Downloads\GridPulse\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:53793)
+    at aC (C:\Users\USER\Downloads\GridPulse\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:52874)
+    at a_ (C:\Users\USER\Downloads\GridPulse\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:50095)
+    at aj (C:\Users\USER\Downloads\GridPulse\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:53793)
+    at C:\Users\USER\Downloads\GridPulse\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:42336
+    at aw (C:\Users\USER\Downloads\GridPulse\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:42822)
+    at a_ (C:\Users\USER\Downloads\GridPulse\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:49776)
+    at aj (C:\Users\USER\Downloads\GridPulse\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:53793)
+    at aC (C:\Users\USER\Downloads\GridPulse\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:52874)
+    at a_ (C:\Users\USER\Downloads\GridPulse\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:50095)
+    at aj (C:\Users\USER\Downloads\GridPulse\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:53793)
+    at C:\Users\USER\Downloads\GridPulse\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:42336
+    at aw (C:\Users\USER\Downloads\GridPulse\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:42822)
+    at a_ (C:\Users\USER\Downloads\GridPulse\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:49776)
+    at aj (C:\Users\USER\Downloads\GridPulse\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:53793)
+    at aC (C:\Users\USER\Downloads\GridPulse\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:52874)
+    at a_ (C:\Users\USER\Downloads\GridPulse\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:50095)
+    at aj (C:\Users\USER\Downloads\GridPulse\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:53793)
+    at C:\Users\USER\Downloads\GridPulse\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:42336
+    at aw (C:\Users\USER\Downloads\GridPulse\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:42822)
+    at a_ (C:\Users\USER\Downloads\GridPulse\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:49776)
+    at ab (C:\Users\USER\Downloads\GridPulse\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:11808)
+    at C:\Users\USER\Downloads\GridPulse\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:16871
+    at aw (C:\Users\USER\Downloads\GridPulse\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:16908)
+    at a_ (C:\Users\USER\Downloads\GridPulse\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:49776)
+    at ab (C:\Users\USER\Downloads\GridPulse\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:11808)
+    at C:\Users\USER\Downloads\GridPulse\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:16871
+    at aw (C:\Users\USER\Downloads\GridPulse\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:16908)
+    at a_ (C:\Users\USER\Downloads\GridPulse\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:49776)
+    at ab (C:\Users\USER\Downloads\GridPulse\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:11808)
+    at C:\Users\USER\Downloads\GridPulse\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:16871
+    at aw (C:\Users\USER\Downloads\GridPulse\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:16908)
+    at aw (C:\Users\USER\Downloads\GridPulse\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:46505)
+    at a_ (C:\Users\USER\Downloads\GridPulse\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:49776)
+    at aj (C:\Users\USER\Downloads\GridPulse\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:53793)
+    at aC (C:\Users\USER\Downloads\GridPulse\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:52874)
+    at a_ (C:\Users\USER\Downloads\GridPulse\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:50095)
+digest: "3897366828"
+Warning: React.jsx: type is invalid -- expected a string (for built-in components) or a class/function (for composite components) but got: object. You likely forgot to export your component from the file it's defined in, or you might have mixed up default and named imports.
+    at Dashboard (webpack-internal:///(ssr)/./components/Dashboard.tsx:32:294)
+    at Home
+    at ClientPageRoot (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/client-page.js:14:11)
+    at Lazy
+    at InnerLayoutRouter (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/layout-router.js:242:11)
+    at RedirectErrorBoundary (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/redirect-boundary.js:73:9)
+    at RedirectBoundary (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/redirect-boundary.js:81:11)
+    at NotFoundErrorBoundary (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/not-found-boundary.js:76:9)
+    at NotFoundBoundary (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/not-found-boundary.js:84:11)
+    at LoadingBoundary (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/layout-router.js:347:11)
+    at ErrorBoundary (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/error-boundary.js:158:11)
+    at InnerScrollAndFocusHandler (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/layout-router.js:153:9)
+    at ScrollAndFocusHandler (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/layout-router.js:228:11)
+    at RenderFromTemplateContext (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/render-from-template-context.js:16:44)
+    at Lazy
+    at OuterLayoutRouter (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/layout-router.js:367:11)
+    at Lazy
+    at GridDataProvider (webpack-internal:///(ssr)/./lib/GridDataProvider.tsx:53:29)
+    at Lazy
+    at ThemeProvider (webpack-internal:///(ssr)/./components/ui/ThemeProvider.tsx:25:26)
+    at Lazy
+    at body
+    at html
+    at RedirectErrorBoundary (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/redirect-boundary.js:73:9)
+    at RedirectBoundary (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/redirect-boundary.js:81:11)
+    at ReactDevOverlay (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/react-dev-overlay/app/ReactDevOverlay.js:87:9)
+    at HotReload (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/react-dev-overlay/app/hot-reloader-client.js:322:11)
+    at Router (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/app-router.js:202:11)
+    at ErrorBoundaryHandler (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/error-boundary.js:112:9)
+    at ErrorBoundary (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/error-boundary.js:158:11)
+    at AppRouter (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/app-router.js:564:13)
+    at Lazy
+    at r6 (C:\Users\USER\Downloads\GridPulse\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:39:19009)
+    at r6 (C:\Users\USER\Downloads\GridPulse\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:39:19009)
+    at ServerInsertedHTMLProvider (C:\Users\USER\Downloads\GridPulse\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:39:24756)
+ ⨯ Internal error: Error: Element type is invalid: expected a string (for built-in components) or a class/function (for composite components) but got: object. You likely forgot to export your component from the file it's defined in, or you might have mixed up default and named imports.
+    at aw (C:\Users\USER\Downloads\GridPulse\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:46775)
+    at a_ (C:\Users\USER\Downloads\GridPulse\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:49776)
+    at aj (C:\Users\USER\Downloads\GridPulse\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:53793)
+    at C:\Users\USER\Downloads\GridPulse\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:42336
+    at aw (C:\Users\USER\Downloads\GridPulse\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:42822)
+    at a_ (C:\Users\USER\Downloads\GridPulse\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:49776)
+    at aj (C:\Users\USER\Downloads\GridPulse\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:53793)
+    at aC (C:\Users\USER\Downloads\GridPulse\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:52874)
+    at a_ (C:\Users\USER\Downloads\GridPulse\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:50095)
+    at aj (C:\Users\USER\Downloads\GridPulse\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:53793)
+    at C:\Users\USER\Downloads\GridPulse\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:42336
+    at aw (C:\Users\USER\Downloads\GridPulse\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:42822)
+    at a_ (C:\Users\USER\Downloads\GridPulse\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:49776)
+    at aj (C:\Users\USER\Downloads\GridPulse\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:53793)
+    at aC (C:\Users\USER\Downloads\GridPulse\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:52874)
+    at a_ (C:\Users\USER\Downloads\GridPulse\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:50095)
+    at aj (C:\Users\USER\Downloads\GridPulse\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:53793)
+    at C:\Users\USER\Downloads\GridPulse\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:42336
+    at aw (C:\Users\USER\Downloads\GridPulse\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:42822)
+    at a_ (C:\Users\USER\Downloads\GridPulse\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:49776)
+    at aj (C:\Users\USER\Downloads\GridPulse\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:53793)
+    at aC (C:\Users\USER\Downloads\GridPulse\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:52874)
+    at a_ (C:\Users\USER\Downloads\GridPulse\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:50095)
+    at aj (C:\Users\USER\Downloads\GridPulse\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:53793)
+    at C:\Users\USER\Downloads\GridPulse\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:42336
+    at aw (C:\Users\USER\Downloads\GridPulse\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:42822)
+    at a_ (C:\Users\USER\Downloads\GridPulse\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:49776)
+    at aj (C:\Users\USER\Downloads\GridPulse\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:53793)
+    at aC (C:\Users\USER\Downloads\GridPulse\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:52874)
+    at a_ (C:\Users\USER\Downloads\GridPulse\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:50095)
+    at aj (C:\Users\USER\Downloads\GridPulse\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:53793)
+    at C:\Users\USER\Downloads\GridPulse\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:42336
+    at aw (C:\Users\USER\Downloads\GridPulse\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:42822)
+    at a_ (C:\Users\USER\Downloads\GridPulse\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:49776)
+    at ab (C:\Users\USER\Downloads\GridPulse\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:11808)
+    at C:\Users\USER\Downloads\GridPulse\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:16871
+    at aw (C:\Users\USER\Downloads\GridPulse\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:16908)
+    at a_ (C:\Users\USER\Downloads\GridPulse\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:49776)
+    at ab (C:\Users\USER\Downloads\GridPulse\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:11808)
+    at C:\Users\USER\Downloads\GridPulse\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:16871
+    at aw (C:\Users\USER\Downloads\GridPulse\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:16908)
+    at a_ (C:\Users\USER\Downloads\GridPulse\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:49776)
+    at ab (C:\Users\USER\Downloads\GridPulse\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:11808)
+    at C:\Users\USER\Downloads\GridPulse\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:16871
+    at aw (C:\Users\USER\Downloads\GridPulse\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:16908)
+    at aw (C:\Users\USER\Downloads\GridPulse\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:46505)
+    at a_ (C:\Users\USER\Downloads\GridPulse\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:49776)
+    at aj (C:\Users\USER\Downloads\GridPulse\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:53793)
+    at aC (C:\Users\USER\Downloads\GridPulse\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:52874)
+    at a_ (C:\Users\USER\Downloads\GridPulse\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:50095)
+digest: "3897366828"
+ GET / 500 in 288ms
+ GET / 500 in 288ms
+ ✓ Compiled in 517ms (897 modules)
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ GET / 200 in 101ms
+ GET / 200 in 107ms
+ ✓ Compiled in 265ms (897 modules)
+ GET / 200 in 182ms
+ ✓ Compiled /grid-monitoring/live-map in 382ms (372 modules)
+ ○ Compiling /grid-monitoring/power-flow ...
+ ✓ Compiled /grid-monitoring/power-flow in 1108ms (907 modules)
+ ○ Compiling /anomalies ...
+ ✓ Compiled /anomalies in 627ms (372 modules)
+ ✓ Compiled /forecasting in 444ms (372 modules)
+ ✓ Compiled /reports in 271ms (372 modules)

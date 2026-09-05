@@ -1,0 +1,48 @@
+INFO:     Started server process [17740]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+INFO:     127.0.0.1:55202 - "WebSocket /ws/grid" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:56348 - "WebSocket /ws/grid" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:54924 - "WebSocket /ws/grid" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:59007 - "WebSocket /ws/grid" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:49774 - "WebSocket /ws/grid" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:50559 - "WebSocket /ws/grid" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:63994 - "WebSocket /ws/grid" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:53984 - "WebSocket /ws/grid" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:52660 - "WebSocket /ws/grid" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:57647 - "WebSocket /ws/grid" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:57882 - "WebSocket /ws/grid" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:58062 - "WebSocket /ws/grid" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:64755 - "WebSocket /ws/grid" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:52270 - "WebSocket /ws/grid" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:52319 - "WebSocket /ws/grid" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:56542 - "WebSocket /ws/grid" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:52216 - "WebSocket /ws/grid" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:55140 - "WebSocket /ws/grid" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:53404 - "WebSocket /ws/grid" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:61632 - "WebSocket /ws/grid" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:49344 - "WebSocket /ws/grid" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:49890 - "WebSocket /ws/grid" [accepted]
+INFO:     connection open
